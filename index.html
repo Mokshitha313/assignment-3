@@ -1,82 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadata and Linking External Stylesheet -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mokshitha Mokthum - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Linking CSS for styling -->
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <h1>Mokshitha Mokthum</h1>
         <p>Welcome to my personal website!</p>
     </header>
 
+    <!-- About Me Section -->
     <section>
         <h2>About Me</h2>
         <p>
-            Hello! I'm <strong>Mokshitha Mokthum</strong>, a passionate student currently pursuing my B.Tech at IIIT Hyderabad. I am driven by my interests in technology, software development, and problem-solving. My journey began at <strong>Sri Chaitanya</strong> where I completed upto my Intermediate (12th grade) studies. I am enthusiastic about learning new things and applying my knowledge to real-world problems.
+            Hello! I'm <strong>Mokshitha Mokthum</strong>, a passionate student currently pursuing my B.Tech at IIIT Hyderabad.
+            My journey began at <strong>Sri Chaitanya</strong> where I completed up to my Intermediate (12th grade) studies.
+            I love learning and applying my skills to real-world problems.
         </p>
     </section>
 
+    <!-- Image Section: Profile and Birthplace Photos -->
     <section class="content">
         <div>
             <h2>My Profile Picture</h2>
-            <img src="profile.jpg" alt="Mokshitha Mokthum">
+            <div class="image-wrapper">
+                <!-- Profile Image -->
+                <img src="images/profile.jpg" alt="Mokshitha Mokthum" class="responsive-image">
+            </div>
         </div>
         <div>
             <h2>Pictures from My Birthplace</h2>
-            <img src="birthplace.jpg" alt="My Birthplace">
+            <div class="image-wrapper">
+                <!-- Birthplace Image -->
+                <img src="images/birthplace.jpg" alt="My Birthplace" class="responsive-image">
+            </div>
         </div>
     </section>
 
+    <!-- Education and Achievements Section -->
     <section class="education">
         <h2>Education & Achievements</h2>
-        <p>Education:</p>
         <ul>
             <li>B.Tech, IIIT Hyderabad – Present</li>
             <li>Intermediate, Sri Chaitanya Junior College</li>
             <li>Schooling, Sri Chaitanya School</li>
         </ul>
-        <p>Achievements:</p>
         <ul>
             <li>Secured a good rank in competitive exams</li>
         </ul>
     </section>
 
+    <!-- Text Analysis Feature (Assignment Q3) -->
     <section>
         <h2>Text Analysis (Q3)</h2>
+        <!-- Textarea for user input -->
         <textarea id="inputText" rows="10" cols="60" placeholder="Enter 10000+ word text here..."></textarea>
         <br>
+        <!-- Button to trigger analysis -->
         <button onclick="analyzeText()">Analyze Text</button>
+        <!-- Div to display results -->
         <div id="results"></div>
-      </section>
-      
-
-    <section>
-        <h2>Technical Skills</h2>
-        <p>
-            Here are the technical skills I currently learned and have some knowledge about it :
-            <ul>
-                <li>Programming Languages: C, Python, JavaScript</li>
-                <li>Web Technologies: HTML, CSS, JavaScript</li>
-                <li>Databases: MySQL, MongoDB</li>
-                <li>Tools: Git, VS Code</li>
-                <li>Other: Problem Solving, Data Structures, Algorithms</li>
-            </ul>
-        </p>
     </section>
 
+    <!-- Technical Skills Section -->
+    <section>
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Programming Languages: C, Python, JavaScript</li>
+            <li>Web Technologies: HTML, CSS, JavaScript</li>
+            <li>Databases: MySQL, MongoDB</li>
+            <li>Tools: Git, VS Code</li>
+            <li>Other: Problem Solving, Data Structures, Algorithms</li>
+        </ul>
+    </section>
+
+    <!-- CV Download Section -->
     <section>
         <h2>My CV</h2>
         <p>Click the link below to view or download my CV:</p>
         <a href="CV.pdf" target="_blank">Download My CV (PDF)</a>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Mokshitha Mokthum</p>
     </footer>
-    <script src="script.js" defer></script>
 
+    <!-- Linking External JavaScript -->
+    <script src="script.js" defer></script>
 </body>
 </html>
