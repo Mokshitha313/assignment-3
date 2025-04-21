@@ -40,9 +40,27 @@ function analyzeText() {
   const specialSymbols = (text.match(/[^a-zA-Z0-9\s]/g) || []).length;
 
   // Define word lists to count specific types of words
-  const pronouns = ["he", "she", "they", "it", "we", "you", "i", "me", "him", "her", "us", "them"];
-  const prepositions = ["on", "in", "at", "by", "for", "with", "about", "against", "between", "into"];
-  const articles = ["a", "an", "the"];
+  const pronouns = [
+    'i', 'me', 'my', 'mine', 'myself',
+    'you', 'your', 'yours', 'yourself',
+    'he', 'him', 'his', 'himself',
+    'she', 'her', 'hers', 'herself',
+    'it', 'its', 'itself',
+    'we', 'us', 'our', 'ours', 'ourselves',
+    'they', 'them', 'their', 'theirs', 'themselves',
+    'this', 'that', 'these', 'those'
+  ];
+
+  const prepositions = [
+    'about', 'above', 'across', 'after', 'against', 'along', 'amid', 'among',
+    'around', 'at', 'before', 'behind', 'below', 'beneath', 'beside', 'between',
+    'beyond', 'by', 'despite', 'during', 'except', 'for', 'from', 'in', 'inside',
+    'into', 'like', 'near', 'of', 'off', 'on', 'onto', 'out', 'outside', 'over',
+    'past', 'regarding', 'round', 'since', 'through', 'throughout', 'to', 'toward',
+    'under', 'underneath', 'until', 'unto', 'up', 'upon', 'with', 'within', 'without'
+  ];
+  
+  const articles = ['a', 'an', 'the', 'some', 'any'];
 
   // Convert all words in the input to lowercase and extract them
   const wordsArray = text.toLowerCase().match(/\b\w+\b/g) || [];
