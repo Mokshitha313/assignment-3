@@ -59,7 +59,7 @@ function analyzeText() {
     'past', 'regarding', 'round', 'since', 'through', 'throughout', 'to', 'toward',
     'under', 'underneath', 'until', 'unto', 'up', 'upon', 'with', 'within', 'without'
   ];
-  
+
   const articles = ['a', 'an', 'the', 'some', 'any'];
 
   // Convert all words in the input to lowercase and extract them
@@ -97,3 +97,4 @@ function analyzeText() {
       <h3>Indefinite Articles Count:</h3><pre>${JSON.stringify(result.articles, null, 2)}</pre>
   `;
 }
+
